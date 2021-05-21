@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Karla", sans-serif;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(204, 43%, 93%);
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.component .description {
+  grid-area: top-area;
+}
+
+.component {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-areas:
+    "top-area top-area"
+    ". .";
+}
+
+.section {
+  padding: 30px;
+}
+
+.component {
+  width: 45%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.component .description {
+  background-color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.component .description h1 {
+  font-weight: 700;
+  color: hsl(179, 62%, 43%);
+  margin-bottom: 1.2rem;
+  font-size: 1.8rem;
+}
+
+.component .description h2 {
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.component .description p {
+  color: hsl(218, 22%, 67%);
+  line-height: 1.6rem;
+  text-align: justify;
+}
+
+.component .subscription {
+  background-color: hsl(179, 62%, 43%);
+  border-bottom-left-radius: 5px;
+}
+
+.component .subscription h2 {
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.component .subscription p:first-of-type {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.component .subscription p:first-of-type span {
+  font-size: 1rem;
+  color: hsl(204, 43%, 93%);
+  opacity: 50%;
+}
+
+.component .subscription p:last-of-type {
+  font-size: 1;
+  color: #fff;
+}
+
+.component .subscription .button {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  padding: 20px;
+  text-align: center;
+  background-color: hsl(71, 73%, 54%);
+  border-radius: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.component .subscription .button:hover {
+  background-color: hsl(71, 82%, 56%);
+  transition: 0.5s ease all;
+  cursor: pointer;
+}
+
+.component .about-section {
+  background-color: hsl(179, 47%, 52%);
+  color: #fff;
+  border-bottom-right-radius: 5px;
+}
+
+.component .about-section h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1.4rem;
+}
+
+.component .about-section ul {
+  line-height: 1.4rem;
+  color: hsl(204, 43%, 93%);
+  opacity: 70%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 765px) {
+  .component {
+    grid-template-areas:
+      "top-area"
+      "."
+      ".";
+    width: 80%;
+  }
+
+  .component .subscription {
+    background-color: hsl(179, 62%, 43%);
+    border-bottom-left-radius: 0px;
+  }
+
+  .component .about-section {
+    border-bottom-left-radius: 5px;
+  }
+}
